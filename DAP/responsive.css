@@ -1,0 +1,47 @@
+p{margin: 0.9em 0em;}
+
+/* Estilos para smartphones con ancho de pantalla de 480px o menos */
+@media handheld and (max-width: 480px),
+    screen and (max-device-width: 480px),
+    screen and (max-width: 480px)
+{
+    div{
+        column-count: 1;
+        background-color:floralwhite;
+    }
+}
+
+/*Estilos para dispositivos con ancho de pantalla de 481px a 1024px */
+@media only  screen and (min-width: 481px) and  (max-width: 1024px)
+{
+    div{
+        column-count: 2;
+        column-gap: 30px;
+        column-rule: 1px outset black;
+        background-color:beige;
+    }
+}
+
+/*Estilos para dispositivos con ancho de pantalla de 1025px o mayor */
+@media only screen and (min-width: 1025px)
+{
+    div{
+        column-count: 3;
+        column-gap: 30px;
+        column-rule: 1px outset black;
+        background-color: burlywood;
+    }
+}
+
+header
+{
+    font-family: sans-serif,serif,arial;
+    font-size: 150%;
+    color: darkblue;
+    background-color: darkkhaki;
+}
+
+p
+{
+    font-family: "Raleway";
+}
