@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+     <meta charset ="utf-8">
+     <title>Formulario</title>
+    </head>
+
+    <body>
+     <!--con esta etiqueta inicia el formulario, indica el método de enviar información y la ubicación-->
+     <!-- de la secuencia de comandos de procesamiento del formulario-->
+     <!--el atributo method especifica la forma en que se envían los datos del formulario al servidor web-->
+     <!--POST se adjuntan los datos del formulario a la solicitud del navegador-->
+     <h1 style = "font size: 20pt; font-family: helvetica, sans-serif, arial">Solicitud de empleo</h1>
+     <form method = "post" action="itesm.mx">
+         <!--<input type = "text"> inserta un campo de texto-->
+         <p>
+             <label>Fecha: <input name = "fecha" type = "date" size = "30"></label><br/>
+             <label>Puesto que solicita y turno de interés: <input name = "pyt" type = "text" size = "10" maxlength = "10"</label>
+         </p>
+         <h2 style = "font size: 20pt; font-family: arial">Datos Personales</h2>
+         <p>
+             <label>Apellido Paterno:<input name = "aPaterno" type = "text" size = "25" maxlength = "30"></label>
+             <label>Apellido Materno:<input name = "aMaterno" type = "text" size = "25" maxlength = "30"></label>
+             <label>Nombres:<input name = "nombres" type = "text" size = "25" maxlength = "30"></label><br/>
+             <label>Edad:<input name = "edad" type = "number" size = "2" maxlength = "2"></label><br/>
+             <label>Estatura:<input name = "estatura" type = "number" size = "5" maxlength = "5"></label>
+             <!--continua con la captura familiares-->
+             <label>Peso:<input name = "peso" type = "text" size = "5" maxlength = "7"></label>
+             <label>Estado Civil:<input name = "estado civil" type = "text" size = "5" maxlength = "10"></label>
+             <label>Dirección:<input name = "dirección" type = "text" size = "5" maxlength = "7"></label>
+
+
+
+         </p>
+
+
+    </body>
+
+
+</html>
