@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dado</title>
+<script>
+    imagenesArreglo = new Array(7);
+    imagenesArreglo[0] = new Image();
+    imagenesArreglo[0].src = new "http://i13.servimg.com/u/f13/17/26/30/83/110.jpg";
+    imagenesArreglo[1] = new Image();
+    imagenesArreglo[1].src = new "http://i13.servimg.com/u/f13/17/26/30/83/210.jpg";
+    imagenesArreglo[2] = new Image();
+    imagenesArreglo[2].src = new "http://i13.servimg.com/u/f13/17/26/30/83/310.jpg";
+    imagenesArreglo[3] = new Image();
+    imagenesArreglo[3].src = new "https://s-media-cache-ak0.pinimg.com/236x/ba/fb/de/bafbde3d7a83bdeb3972d87b40ad1aae.jpg";
+    imagenesArreglo[4] = new Image();
+    imagenesArreglo[4].src = new "https://k31.kn3.net/taringa/5/6/8/4/C/0/Prokaryota/195.png";
+    imagenesArreglo[5] = new Image();
+    imagenesArreglo[5].src= new "http://miguel.eortiz.com.co/juegos%20educativos/preescolar/prekinder/numeros%20kinder%202/dado_dace_6.JPG";
+
+    var imagenesArreglo = ["http://i13.servimg.com/u/f13/17/26/30/83/110.jpg", "http://i13.servimg.com/u/f13/17/26/30/83/210.jpg", "http://i13.servimg.com/u/f13/17/26/30/83/310.jpg", "https://s-media-cache-ak0.pinimg.com/236x/ba/fb/de/bafbde3d7a83bdeb3972d87b40ad1aae.jpg", "https://k31.kn3.net/taringa/5/6/8/4/C/0/Prokaryota/195.png", "http://miguel.eortiz.com.co/juegos%20educativos/preescolar/prekinder/numeros%20kinder%202/dado_dace_6.JPG"];
+
+
+    function muestraImagen(){
+    var n= Math.floor(Math.random() * (imagenesArreglo.length+1));
+    document.canvas.src = imagenesArreglo[n];
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Imagen Aleatoria</h1>
+
+<form name="imgFormulario">
+
+<table border=10>
+<tr>
+<td>
+
+<input type="button" onClick="muestraImagen()" value="Random Img">
+
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="" name="canvas"/>
+
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
